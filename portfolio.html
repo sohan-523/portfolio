@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>xyz</p>
+            <h1>Hi,I am <span>Sohan</span>  <br>kumar</h1>
+        </div>
+    </div>
+</div>
+<!---------about--------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>nsdoihaowieb'vabsdoucvb'oasbd cobuasd;ub;cbajsdicbsodjbc;oibs;dojbc;sjbdcjbas;ijdc;iuha'osehfihauo;eb;ch;iasb;ch'oaweibc'oub;iWO/CLIHWE0CB'UCEIL.UASBC;
+                    <br>
+                    jaishreeramojsdpa[s'ihdv[98ahsiov;uoah9vd]]
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')"> Edducation</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>ui/ux</span><br>Designing Web/app interfaces</li>
+                        <li><span>web development</span><br>Web app development</li>
+                        <li><span>app development</span><br>Building Android/IOS apps</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experence">
+                    <ul>
+                        <li><span>2023 - current</span><br>Web Development training at GNI</li>
+                        <li><span>2022 - MUN</span><br>GNIMUN deligate of israel</li>
+                        <li><span>2018 - 2019 </span><br>1st in inter-school debet compition</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-current</span><br>pursuing B.Tech at Guru Nanak institute of technology</li>
+                        <li><span>2020-2021</span><br>intermediate at narayana jr collage</li>
+                        <li><span>2019</span><br>10th class from SR Digi school</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services---------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>nkdf;hvpoir;nvjpdiufvb;jodfbv;ibs;fokjvb</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>nkdf;hvpoir;nvjpdiufvb;jodfbv;ibs;fokjvb</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>nkdf;hvpoir;nvjpdiufvb;jodfbv;ibs;fokjvb</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currenttarget.classlist.add("active-link");
+        document.getElementById(tabname).classlist.add("active-tab")
+    }
+</script>
+</body>
+</html>
